@@ -1,0 +1,105 @@
+body
+{
+	background-image: url(./assets/html_coding_background.jpg);
+	background-size: cover;
+}
+
+#about
+{
+	background-color: #252728
+	color: white;
+	text-align: center;
+	font-family: 'Merriweather', serif;
+}
+
+#portrait
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 50%;
+	max-width: 50%;
+}
+
+.jumbotron
+{
+	background-color: #252728
+	color: white;
+	text-align: center;
+	font-family: 'Merriweather', serif;
+	opacity: 0.965;
+}
+
+.card-body {
+	text-align: center;
+}
+
+.indexContentBox {
+
+	background-color: #252728
+	color: white;
+	text-align: center;
+	font-family: 'Merriweather', serif;
+	opacity: 0.965;
+}
+
+/* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #000000;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-family: 'Merriweather', serif;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #1a4fa5;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+  opacity: 0.965;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
